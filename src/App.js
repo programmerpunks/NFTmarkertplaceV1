@@ -1,11 +1,17 @@
-import React from 'react';
-import './App.css';
-
+import React from "react";
+import "./App.css";
+import NFTCollection from "./components/collection";
+import Footer from "./components/footer";
+import Header from "./components/header";
+import Navbar from "./components/navbar";
 function App() {
   return (
-     <h1 className="text-3xl font-bold underline">
-    NFT marketplace V1
-  </h1>
+    <React.Fragment>
+      <Header />
+      <Navbar />
+      <NFTCollection />
+      <Footer />
+    </React.Fragment>
   );
 }
 
