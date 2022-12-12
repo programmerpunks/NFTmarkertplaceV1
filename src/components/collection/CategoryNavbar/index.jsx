@@ -1,6 +1,6 @@
 import React from "react";
 
-const CategoryNavbar = (props) => {
+const CategoryNavbar = () => {
 
   return (
     <div className="shadow-lg rounded-full mx-auto w-[60%] h-[50px] bg-white">
