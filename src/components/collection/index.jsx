@@ -8,8 +8,22 @@ import NFTCollections from "../../NFTCollectionAPI";
 const NFTCollection = () => {
   const [SelectedBtn, setSelectedBtn] = useState("All");
   const [count, setCount] = useState(NFTCollections.length);
-
-  console.log(NFTCollections);
+  const filter_NFTs = (SelectedBtn, NFTs) => {
+    const filtered_NFTs = [];
+    if (SelectedBtn.SelectedBtn === "All") {
+      // setCount(NFTs.length);
+      return NFTs;
+    } else {
+      for (let index = 0; index < NFTs.length; index++) {
+        if (NFTs[index]["category"] === SelectedBtn.SelectedBtn) {
+          filtered_NFTs.push(NFTs[index]);
+        }
+      }
+      // setCount(filtered_NFTs.length);
+      return filtered_NFTs;
+    }
+  };
+  console.log(filter_NFTs({ SelectedBtn }, NFTCollections));
   return (
     <React.Fragment>
       <div className="bg-[#F3F5FB]">
