@@ -8,6 +8,8 @@ import NFTCollections from "../../NFTCollectionAPI";
 const NFTCollection = () => {
   const [SelectedBtn, setSelectedBtn] = useState("All");
   const [count, setCount] = useState(NFTCollections.length);
+
+  console.log(NFTCollections);
   return (
     <React.Fragment>
       <div className="bg-[#F3F5FB]">
@@ -37,7 +39,7 @@ const NFTCollection = () => {
           </div>
         </div>
         <div className="flex flex-wrap md:mx-[5%]">
-          <NFTCart NFTData={NFTCollections} />;
+          <NFTCart NFTData={NFTCollections} />
         </div>
 
         <GoTopBtn />
