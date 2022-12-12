@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import CategoryNavbar from "./CategoryNavbar";
 import GoTopBtn from "./GoToTop";
 import NewNftCollection from "./newlyListNFT";
@@ -6,6 +6,8 @@ import NFTCart from "./NFTMarketplace";
 import NFTCollections from "../../NFTCollectionAPI";
 
 const NFTCollection = () => {
+  const [SelectedBtn, setSelectedBtn] = useState("All");
+  const [count, setCount] = useState(NFTCollections.length);
   return (
     <React.Fragment>
       <div className="bg-[#F3F5FB]">
@@ -20,7 +22,7 @@ const NFTCollection = () => {
           </div>
         </div>
 
-        <CategoryNavbar />
+        <CategoryNavbar setSelectedBtn={setSelectedBtn} />
 
         <div className="flex justify-center">
           <div className="w-[57%] pt-10 text-[#686868]">
@@ -30,12 +32,12 @@ const NFTCollection = () => {
         <NewNftCollection />
 
         <div className="flex justify-center">
-          <div className="w-[85%] text-[#686868]">988 collection listed</div>
+          <div className="w-[85%] text-[#686868]">
+            {count} {SelectedBtn} collection listed
+          </div>
         </div>
         <div className="flex flex-wrap md:mx-[5%]">
-          {NFTCollections.map((nftData) => {
-            return <NFTCart NFTdata={nftData} />;
-          })}
+          <NFTCart NFTData={NFTCollections} />;
         </div>
 
         <GoTopBtn />

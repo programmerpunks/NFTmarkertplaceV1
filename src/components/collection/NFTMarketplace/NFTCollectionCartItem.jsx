@@ -3,8 +3,8 @@ import React from "react";
 const NFTCartItem = (props) => {
   return (
     <React.Fragment>
-      {props.category ?(
-        <div className=" p-6 md:w-1/2 lg:w-1/4 sm:w-full hover:-translate-y-4 duration-500">
+      {props.category ? (
+        <div className=" p-6 md:w-1/2 lg:w-1/4 sm:w-full hover:-translate-y-4 duration-500 hover:cursor-pointer">
           <div className="h-full border-2 relative border-gray-200 border-opacity-60 rounded-[15px] overflow-hidden shadow-lg bg-white">
             <div className="absolute top-0 right-0 bg-black px-4 rounded-l-lg text-white font-medium">
               {props.category}
@@ -27,8 +27,10 @@ const NFTCartItem = (props) => {
               </div>
             </div>
           </div>
-        </div>):''
-      }
+        </div>
+      ) : (
+        ""
+      )}
     </React.Fragment>
   );
 };
