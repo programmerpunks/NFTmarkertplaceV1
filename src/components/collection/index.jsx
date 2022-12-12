@@ -22,8 +22,8 @@ const NFTCollection = () => {
       return filtered_NFTs;
     }
   };
-  console.log(filter_NFTs({ SelectedBtn }, NFTCollections));
-  return ( 
+  filter_NFTs({ SelectedBtn }, NFTCollections);
+  return (
     <React.Fragment>
       <div className="bg-[#F3F5FB]">
         <div>
@@ -37,7 +37,10 @@ const NFTCollection = () => {
           </div>
         </div>
 
-        <CategoryNavbar setSelectedBtn={setSelectedBtn} />
+        <CategoryNavbar
+          setSelectedBtn={setSelectedBtn}
+          selectedBtn={SelectedBtn}
+        />
 
         <div className="flex justify-center">
           <div className="w-[57%] pt-10 text-[#686868]">
