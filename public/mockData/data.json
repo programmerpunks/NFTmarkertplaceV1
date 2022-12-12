@@ -1,0 +1,55 @@
+{
+"NFTCollectionsDate": 
+  [
+    {
+      "img_url": "./images/NFTCollections/FtmCategory.png",
+      "category": "FTM",
+      "title": "Netizens"
+    },
+    {
+      "img_url": "./images/NFTCollections/FtmCategory.png",
+      "category": "FTM",
+      "title": "8BIT Wings"
+    },
+    {
+      "img_url": "./images/NFTCollections/FtmCategory.png",
+      "category": "FTM",
+      "title": "8BIT Nostalgia"
+    },
+    {
+      "img_url": "./images/NFTCollections/FtmCategory.png",
+      "category": "FTM",
+      "title": "Ancestral Umans"
+    },
+    {
+      "img_url": "./images/NFTCollections/FtmCategory.png",
+      "category": "FTM",
+      "title": "AStrokid"
+    },
+    {
+      "img_url": "./images/NFTCollections/BscCategory.png",
+      "category": "BSC",
+      "title": "Pancake Squad"
+    },
+    {
+      "img_url": "./images/NFTCollections/BscCategory.png",
+      "category": "BSC",
+      "title": "PixelSweeper"
+    },
+    {
+      "img_url": "./images/NFTCollections/BscCategory.png",
+      "category": "BSC",
+      "title": "Goodfellas Binions"
+    },
+    {
+      "img_url": "./images/NFTCollections/BscCategory.png",
+      "category": "BSC",
+      "title": "DrunkSkunksDC"
+    },
+    {
+      "img_url": "./images/NFTCollections/BscCategory.png",
+      "category": "BSC",
+      "title": "Goodfellas Hacked"
+    }
+  ]
+}

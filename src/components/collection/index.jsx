@@ -28,6 +28,7 @@ const NFTCollection = () => {
 
         <CategoryNavbar
           setSelectedBtn={setSelectedBtn}
+          selectedBtn={SelectedBtn}
           setnoOfElements={setnoOfElements}
         />
 

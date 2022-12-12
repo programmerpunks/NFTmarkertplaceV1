@@ -9,7 +9,11 @@ const CategoryNavbar = (props) => {
     <div className="shadow-lg rounded-full mx-auto w-[60%] h-[50px] bg-white">
       <div className="flex justify-evenly text-xl">
         <div
-          className="bg-black text-white w-full rounded-full h-[100%] py-3 flex justify-center hover:cursor-pointer"
+          className={`w-full h-[100%] py-3 flex justify-center hover:cursor-pointer ${
+            props.selectedBtn === "All"
+              ? "bg-black text-white rounded-full"
+              : ""
+          }`}
           onClick={() =>
             set_states(props.setnoOfElements, 30, props.setSelectedBtn, "All")
           }
@@ -17,7 +21,11 @@ const CategoryNavbar = (props) => {
           All
         </div>
         <div
-          className="w-full flex justify-center items-center h-[100%] py-3 hover:cursor-pointer"
+          className={`w-full h-[100%] py-3 flex justify-center hover:cursor-pointer ${
+            props.selectedBtn === "FTM"
+              ? "bg-black text-white rounded-full"
+              : ""
+          }`}
           onClick={() =>
             set_states(props.setnoOfElements, 30, props.setSelectedBtn, "FTM")
           }
@@ -25,7 +33,11 @@ const CategoryNavbar = (props) => {
           FTM
         </div>
         <div
-          className="w-full flex justify-center h-[100%] py-3 hover:cursor-pointer"
+          className={`w-full h-[100%] py-3 flex justify-center hover:cursor-pointer ${
+            props.selectedBtn === "BSC"
+              ? "bg-black text-white rounded-full"
+              : ""
+          }`}
           onClick={() =>
             set_states(props.setnoOfElements, 30, props.setSelectedBtn, "BSC")
           }
@@ -33,7 +45,11 @@ const CategoryNavbar = (props) => {
           BSC
         </div>
         <div
-          className="w-full flex justify-center h-[100%] py-3 hover:cursor-pointer"
+          className={`w-full h-[100%] py-3 flex justify-center hover:cursor-pointer ${
+            props.selectedBtn === "MATIC"
+              ? "bg-black text-white rounded-full"
+              : ""
+          }`}
           onClick={() =>
             set_states(props.setnoOfElements, 30, props.setSelectedBtn, "MATIC")
           }
@@ -41,7 +57,11 @@ const CategoryNavbar = (props) => {
           MATIC
         </div>
         <div
-          className="w-full flex justify-center h-[100%] py-3 hover:cursor-pointer"
+          className={`w-full h-[100%] py-3 flex justify-center hover:cursor-pointer ${
+            props.selectedBtn === "ONE"
+              ? "bg-black text-white rounded-full"
+              : ""
+          }`}
           onClick={() =>
             set_states(props.setnoOfElements, 30, props.setSelectedBtn, "ONE")
           }
@@ -49,7 +69,11 @@ const CategoryNavbar = (props) => {
           ONE
         </div>
         <div
-          className="w-full flex justify-center h-[100%] py-3 hover:cursor-pointer"
+          className={`w-full h-[100%] py-3 flex justify-center hover:cursor-pointer ${
+            props.selectedBtn === "AVAX"
+              ? "bg-black text-white rounded-full"
+              : ""
+          }`}
           onClick={() =>
             set_states(props.setnoOfElements, 30, props.setSelectedBtn, "AVAX")
           }
