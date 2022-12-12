@@ -1,4 +1,8 @@
 import React from "react";
+const set_states = (setnoOfElements, count, setSelectedBtn, value) => {
+  setnoOfElements(count);
+  setSelectedBtn(value);
+};
 
 const CategoryNavbar = (props) => {
   return (
@@ -10,7 +14,9 @@ const CategoryNavbar = (props) => {
               ? "bg-black text-white rounded-full"
               : ""
           }`}
-          onClick={() => props.setSelectedBtn("All")}
+          onClick={() =>
+            set_states(props.setnoOfElements, 30, props.setSelectedBtn, "All")
+          }
         >
           All
         </div>
@@ -20,7 +26,9 @@ const CategoryNavbar = (props) => {
               ? "bg-black text-white rounded-full"
               : ""
           }`}
-          onClick={() => props.setSelectedBtn("FTM")}
+          onClick={() =>
+            set_states(props.setnoOfElements, 30, props.setSelectedBtn, "FTM")
+          }
         >
           FTM
         </div>
@@ -30,7 +38,9 @@ const CategoryNavbar = (props) => {
               ? "bg-black text-white rounded-full"
               : ""
           }`}
-          onClick={() => props.setSelectedBtn("BSC")}
+          onClick={() =>
+            set_states(props.setnoOfElements, 30, props.setSelectedBtn, "BSC")
+          }
         >
           BSC
         </div>
@@ -40,7 +50,9 @@ const CategoryNavbar = (props) => {
               ? "bg-black text-white rounded-full"
               : ""
           }`}
-          onClick={() => props.setSelectedBtn("MATIC")}
+          onClick={() =>
+            set_states(props.setnoOfElements, 30, props.setSelectedBtn, "MATIC")
+          }
         >
           MATIC
         </div>
@@ -50,7 +62,9 @@ const CategoryNavbar = (props) => {
               ? "bg-black text-white rounded-full"
               : ""
           }`}
-          onClick={() => props.setSelectedBtn("ONE")}
+          onClick={() =>
+            set_states(props.setnoOfElements, 30, props.setSelectedBtn, "ONE")
+          }
         >
           ONE
         </div>
@@ -60,7 +74,9 @@ const CategoryNavbar = (props) => {
               ? "bg-black text-white rounded-full"
               : ""
           }`}
-          onClick={() => props.setSelectedBtn("AVAX")}
+          onClick={() =>
+            set_states(props.setnoOfElements, 30, props.setSelectedBtn, "AVAX")
+          }
         >
           AVAX
         </div>
