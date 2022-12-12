@@ -11,7 +11,7 @@ const CategoryNavbar = (props) => {
         <div
           className="bg-black text-white w-full rounded-full h-[100%] py-3 flex justify-center hover:cursor-pointer"
           onClick={() =>
-            set_states(props.setnoOfElements, 5, props.setSelectedBtn, "All")
+            set_states(props.setnoOfElements, 30, props.setSelectedBtn, "All")
           }
         >
           All
@@ -19,7 +19,7 @@ const CategoryNavbar = (props) => {
         <div
           className="w-full flex justify-center items-center h-[100%] py-3 hover:cursor-pointer"
           onClick={() =>
-            set_states(props.setnoOfElements, 5, props.setSelectedBtn, "FTM")
+            set_states(props.setnoOfElements, 30, props.setSelectedBtn, "FTM")
           }
         >
           FTM
@@ -27,7 +27,7 @@ const CategoryNavbar = (props) => {
         <div
           className="w-full flex justify-center h-[100%] py-3 hover:cursor-pointer"
           onClick={() =>
-            set_states(props.setnoOfElements, 5, props.setSelectedBtn, "BSC")
+            set_states(props.setnoOfElements, 30, props.setSelectedBtn, "BSC")
           }
         >
           BSC
@@ -35,7 +35,7 @@ const CategoryNavbar = (props) => {
         <div
           className="w-full flex justify-center h-[100%] py-3 hover:cursor-pointer"
           onClick={() =>
-            set_states(props.setnoOfElements, 5, props.setSelectedBtn, "MATIC")
+            set_states(props.setnoOfElements, 30, props.setSelectedBtn, "MATIC")
           }
         >
           MATIC
@@ -43,7 +43,7 @@ const CategoryNavbar = (props) => {
         <div
           className="w-full flex justify-center h-[100%] py-3 hover:cursor-pointer"
           onClick={() =>
-            set_states(props.setnoOfElements, 5, props.setSelectedBtn, "ONE")
+            set_states(props.setnoOfElements, 30, props.setSelectedBtn, "ONE")
           }
         >
           ONE
@@ -51,7 +51,7 @@ const CategoryNavbar = (props) => {
         <div
           className="w-full flex justify-center h-[100%] py-3 hover:cursor-pointer"
           onClick={() =>
-            set_states(props.setnoOfElements, 5, props.setSelectedBtn, "AVAX")
+            set_states(props.setnoOfElements, 30, props.setSelectedBtn, "AVAX")
           }
         >
           AVAX
