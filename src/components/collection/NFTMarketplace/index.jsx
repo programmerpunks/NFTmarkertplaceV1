@@ -1,7 +1,7 @@
-import React, { useEffect } from "react";
+import React from "react";
 import NFTCartItem from "./NFTCollectionCartItem";
 
-const NFTCart = ({ NFTData, setCount, count }) => {
+const NFTCart = ({ NFTData }) => {
   return (
     <>
       {NFTData.map((NFTItem) => {
