@@ -5,7 +5,6 @@ const matic_collection = require("./images/NFTCollections/MaticCategory.png");
 const one_collection = require("./images/NFTCollections/OneCategory.png");
 
 const NFTCollectionsDate = [
-  [
     {
       img_url: ftm_collection,
       category: "FTM",
@@ -31,9 +30,6 @@ const NFTCollectionsDate = [
       category: "FTM",
       title: "AStrokid",
     },
-  ],
-
-  [
     {
       img_url: bsc_collection,
       category: "BSC",
@@ -59,9 +55,6 @@ const NFTCollectionsDate = [
       category: "BSC",
       title: "Goodfellas Hacked",
     },
-  ],
-  
-  [
     {
       img_url: matic_collection,
       category: "MATIC",
@@ -87,9 +80,6 @@ const NFTCollectionsDate = [
       category: "MATIC",
       title: "Mining Mission Gear Polygon",
     },
-  ],
-
-  [
     {
       img_url: one_collection,
       category: "ONE",
@@ -115,9 +105,7 @@ const NFTCollectionsDate = [
       category: "ONE",
       title: "Harmonauts",
     },
-  ],
-  
-  [
+
     {
       img_url: avax_collection,
       category: "AVAX",
@@ -143,7 +131,6 @@ const NFTCollectionsDate = [
       category: "AVAX",
       title: "AcidCats AVAX",
     },
-  ],
-];
+  ];
 
 export default NFTCollectionsDate;

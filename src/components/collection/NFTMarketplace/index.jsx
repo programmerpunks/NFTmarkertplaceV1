@@ -1,11 +1,10 @@
-import React from "react";
+import React, { useEffect } from "react";
 import NFTCartItem from "./NFTCollectionCartItem";
 
-const NFTCart = (props) => {
-  const NFTCollectionData = props.NFTdata;
+const NFTCart = ({ NFTData, setCount, count }) => {
   return (
-    <React.Fragment>
-      {NFTCollectionData.map((NFTItem) => {
+    <>
+      {NFTData.map((NFTItem) => {
         return (
           <NFTCartItem
             category={NFTItem.category}
@@ -14,7 +13,7 @@ const NFTCart = (props) => {
           />
         );
       })}
-    </React.Fragment>
+    </>
   );
 };
 
