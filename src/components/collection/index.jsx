@@ -24,7 +24,7 @@ const NFTCollection = () => {
     }
   };
   console.log(filter_NFTs({ SelectedBtn }, NFTCollections));
-  return (
+  return ( 
     <React.Fragment>
       <div className="bg-[#F3F5FB]">
         <div>
