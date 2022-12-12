@@ -7,7 +7,7 @@ import NFTCollections from "../../NFTCollectionAPI";
 import get_NFTs_Filtered from "./helping_functions/NFTsListingFunctions";
 
 const NFTCollection = () => {
-  const [noOfElements, setnoOfElements] = useState(30);
+  const [noOfElements, setnoOfElements] = useState(5);
   const [SelectedBtn, setSelectedBtn] = useState("All");
   let filtered_NFTs = get_NFTs_Filtered({ SelectedBtn }, NFTCollections);
   const sliced_NFTs = filtered_NFTs.slice(0, noOfElements);
@@ -38,19 +38,17 @@ const NFTCollection = () => {
         </div>
         <NewNftCollection />
 
-        <div className="flex justify-center">
-          <div className="w-[85%] text-[#686868]">
-            {sliced_NFTs.length} / {filtered_NFTs.length} collection listed
-          </div>
-        </div>
         <div className="flex flex-wrap md:mx-[5%]">
           <NFTCart NFTData={sliced_NFTs} />
         </div>
         {noOfElements < filtered_NFTs.length ? (
           <div className="flex justify-center pt-10 pb-14">
+            <div className="flex justify-center py-3 mr-4 text-[#686868]">
+              {sliced_NFTs.length} / {filtered_NFTs.length} NFTs
+            </div>
             <button
               className="bg-black text-lg text-white rounded-lg p-3"
-              onClick={() => setnoOfElements(noOfElements + 30)}
+              onClick={() => setnoOfElements(noOfElements + 5)}
             >
               Load More
             </button>
