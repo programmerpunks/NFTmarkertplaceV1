@@ -15,16 +15,16 @@ const NFTCollectionsDate = [
     category: "FTM",
     title: "8BIT Wings",
   },
-  // {
-  //   img_url: ftm_collection,
-  //   category: "FTM",
-  //   title: "8BIT Nostalgia",
-  // },
-  // {
-  //   img_url: ftm_collection,
-  //   category: "FTM",
-  //   title: "Ancestral Umans",
-  // },
+  {
+    img_url: ftm_collection,
+    category: "FTM",
+    title: "8BIT Nostalgia",
+  },
+  {
+    img_url: ftm_collection,
+    category: "FTM",
+    title: "Ancestral Umans",
+  },
   {
     img_url: ftm_collection,
     category: "FTM",

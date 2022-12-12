@@ -7,11 +7,11 @@ import NFTCollections from "../../NFTCollectionAPI";
 
 const NFTCollection = () => {
   const [SelectedBtn, setSelectedBtn] = useState("All");
-  const [count, setCount] = useState(NFTCollections.length);
+  let filtered_NFTs = NFTCollections;
   const filter_NFTs = (SelectedBtn, NFTs) => {
-    const filtered_NFTs = [];
+    filtered_NFTs = [];
     if (SelectedBtn.SelectedBtn === "All") {
-      // setCount(NFTs.length);
+      filtered_NFTs = NFTCollections;
       return NFTs;
     } else {
       for (let index = 0; index < NFTs.length; index++) {
@@ -19,7 +19,6 @@ const NFTCollection = () => {
           filtered_NFTs.push(NFTs[index]);
         }
       }
-      // setCount(filtered_NFTs.length);
       return filtered_NFTs;
     }
   };
@@ -49,11 +48,11 @@ const NFTCollection = () => {
 
         <div className="flex justify-center">
           <div className="w-[85%] text-[#686868]">
-            {count} {SelectedBtn} collection listed
+            {filtered_NFTs.length} collection listed
           </div>
         </div>
         <div className="flex flex-wrap md:mx-[5%]">
-          <NFTCart NFTData={NFTCollections} />
+          <NFTCart NFTData={filtered_NFTs} />
         </div>
 
         <GoTopBtn />
