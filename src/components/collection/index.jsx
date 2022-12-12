@@ -7,7 +7,7 @@ import NFTCollections from "../../NFTCollectionAPI";
 import get_NFTs_Filtered from "./helping_functions/NFTsListingFunctions";
 
 const NFTCollection = () => {
-  const [noOfElements, setnoOfElements] = useState(5);
+  const [noOfElements, setnoOfElements] = useState(30);
   const [SelectedBtn, setSelectedBtn] = useState("All");
   let filtered_NFTs = get_NFTs_Filtered({ SelectedBtn }, NFTCollections);
   const sliced_NFTs = filtered_NFTs.slice(0, noOfElements);
@@ -48,7 +48,7 @@ const NFTCollection = () => {
             </div>
             <button
               className="bg-black text-lg text-white rounded-lg p-3"
-              onClick={() => setnoOfElements(noOfElements + 5)}
+              onClick={() => setnoOfElements(noOfElements + 30)}
             >
               Load More
             </button>
