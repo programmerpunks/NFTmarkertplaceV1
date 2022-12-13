@@ -1,10 +1,12 @@
-import React, { useState } from "react";
+import React from "react";
+import { useState } from "react";
+
 import CategoryNavbar from "./CategoryNavbar";
+import get_NFTs_Filtered from "./helping_functions/NFTsListingFunctions";
 import GoTopBtn from "./GoToTop";
 import NewNftCollection from "./newlyListNFT";
 import NFTCart from "./NFTMarketplace";
 import NFTCollections from "../../NFTCollectionAPI";
-import get_NFTs_Filtered from "./helping_functions/NFTsListingFunctions";
 
 const NFTCollection = () => {
   const [noOfElements, setnoOfElements] = useState(30);
@@ -42,7 +44,7 @@ const NFTCollection = () => {
         <div className="flex flex-wrap md:mx-[5%]">
           <NFTCart NFTData={sliced_NFTs} />
         </div>
-        {noOfElements < filtered_NFTs.length ? (
+        {noOfElements < filtered_NFTs.length && (
           <div className="flex justify-center pt-10 pb-14">
             <div className="flex justify-center py-3 mr-4 text-[#686868]">
               {sliced_NFTs.length} / {filtered_NFTs.length} NFTs
@@ -54,8 +56,6 @@ const NFTCollection = () => {
               Load More
             </button>
           </div>
-        ) : (
-          <div></div>
         )}
 
         <GoTopBtn />

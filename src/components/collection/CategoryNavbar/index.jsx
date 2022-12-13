@@ -1,81 +1,62 @@
 import React from "react";
+
 const set_states = (setnoOfElements, count, setSelectedBtn, value) => {
   setnoOfElements(count);
   setSelectedBtn(value);
 };
 
-const CategoryNavbar = (props) => {
+const CategoryNavbar = ({ setSelectedBtn, selectedBtn, setnoOfElements }) => {
   return (
     <div className="shadow-lg rounded-full mx-auto w-[60%] h-[50px] bg-white">
       <div className="flex justify-evenly text-xl">
         <div
           className={`w-full h-[100%] py-3 flex justify-center hover:cursor-pointer ${
-            props.selectedBtn === "All"
-              ? "bg-black text-white rounded-full"
-              : ""
+            selectedBtn === "All" && "bg-black text-white rounded-full"
           }`}
-          onClick={() =>
-            set_states(props.setnoOfElements, 30, props.setSelectedBtn, "All")
-          }
+          onClick={() => set_states(setnoOfElements, 30, setSelectedBtn, "All")}
         >
           All
         </div>
         <div
           className={`w-full h-[100%] py-3 flex justify-center hover:cursor-pointer ${
-            props.selectedBtn === "FTM"
-              ? "bg-black text-white rounded-full"
-              : ""
+            selectedBtn === "FTM" && "bg-black text-white rounded-full"
           }`}
-          onClick={() =>
-            set_states(props.setnoOfElements, 30, props.setSelectedBtn, "FTM")
-          }
+          onClick={() => set_states(setnoOfElements, 30, setSelectedBtn, "FTM")}
         >
           FTM
         </div>
         <div
           className={`w-full h-[100%] py-3 flex justify-center hover:cursor-pointer ${
-            props.selectedBtn === "BSC"
-              ? "bg-black text-white rounded-full"
-              : ""
+            selectedBtn === "BSC" && "bg-black text-white rounded-full"
           }`}
-          onClick={() =>
-            set_states(props.setnoOfElements, 30, props.setSelectedBtn, "BSC")
-          }
+          onClick={() => set_states(setnoOfElements, 30, setSelectedBtn, "BSC")}
         >
           BSC
         </div>
         <div
           className={`w-full h-[100%] py-3 flex justify-center hover:cursor-pointer ${
-            props.selectedBtn === "MATIC"
-              ? "bg-black text-white rounded-full"
-              : ""
+            selectedBtn === "MATIC" && "bg-black text-white rounded-full"
           }`}
           onClick={() =>
-            set_states(props.setnoOfElements, 30, props.setSelectedBtn, "MATIC")
+            set_states(setnoOfElements, 30, setSelectedBtn, "MATIC")
           }
         >
           MATIC
         </div>
         <div
           className={`w-full h-[100%] py-3 flex justify-center hover:cursor-pointer ${
-            props.selectedBtn === "ONE"
-              ? "bg-black text-white rounded-full"
-              : ""
+            selectedBtn === "ONE" && "bg-black text-white rounded-full"
           }`}
-          onClick={() =>
-            set_states(props.setnoOfElements, 30, props.setSelectedBtn, "ONE")
-          }
+          onClick={() => set_states(setnoOfElements, 30, setSelectedBtn, "ONE")}
         >
           ONE
         </div>
         <div
           className={`w-full h-[100%] py-3 flex justify-center hover:cursor-pointer ${
-            props.selectedBtn === "AVAX"
-              ? "bg-black text-white rounded-full"
-              : ""
+            selectedBtn === "AVAX" && "bg-black text-white rounded-full"
           }`}
           onClick={() =>
-            set_states(props.setnoOfElements, 30, props.setSelectedBtn, "AVAX")
+            set_states(setnoOfElements, 30, setSelectedBtn, "AVAX")
           }
         >
           AVAX

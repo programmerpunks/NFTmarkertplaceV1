@@ -2,7 +2,7 @@ import React from "react";
 
 const Navbar = () => {
   return (
-    <React.Fragment>
+    <>
       <div
         className="items-center justify-center hidden w-full md:flex md:w-auto md:order-1"
         id="navbar-sticky"
@@ -21,7 +21,7 @@ const Navbar = () => {
           <li>
             <a
               href="/"
-              className="pl-3 pr-4 flex h-[100%] items-center text-lg rounded md:p-0 dark:text-white font-roboto font-thin opacity-80"
+              className="pl-3 pr-4 flex h-[100%] items-center text-lg rounded md :p-0 dark:text-white font-roboto font-thin opacity-80"
               aria-current="page"
             >
               New listings
@@ -56,7 +56,7 @@ const Navbar = () => {
           </li>
         </ul>
       </div>
-    </React.Fragment>
+    </>
   );
 };
 

@@ -2,7 +2,7 @@ import React from "react";
 
 const Header = () => {
   return (
-    <React.Fragment>
+    <>
       <header className="bg-[#E3E6EE] flex py-5 justify-center">
         <div className="flex w-[65%] justify-between">
           <div>
@@ -37,7 +37,7 @@ const Header = () => {
           </div>
         </div>
       </header>
-    </React.Fragment>
+    </>
   );
 };
 

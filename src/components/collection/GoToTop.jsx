@@ -1,4 +1,5 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
+import { useEffect, useState } from "react";
 import { MdKeyboardArrowUp } from "react-icons/md";
 
 const GoTopBtn = () => {
@@ -20,8 +21,9 @@ const GoTopBtn = () => {
   useEffect(() => {
     window.addEventListener("scroll", listenToScroll);
   }, []);
+  
   return (
-    <div>
+    <>
       {isVisible && (
         <div className="my-20 flex justify-end pr-10 fixed right-7 bottom-5 hover:cursor-pointer">
           <div
@@ -32,7 +34,7 @@ const GoTopBtn = () => {
           </div>
         </div>
       )}
-    </div>
+    </>
   );
 };
 
