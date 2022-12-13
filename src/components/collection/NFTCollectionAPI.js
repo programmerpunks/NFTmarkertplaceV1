@@ -1,8 +1,8 @@
-const avax_collection = require("./images/NFTCollections/AvaxCategory.png");
-const bsc_collection = require("./images/NFTCollections/BscCategory.png");
-const ftm_collection = require("./images/NFTCollections/FtmCategory.png");
-const matic_collection = require("./images/NFTCollections/MaticCategory.png");
-const one_collection = require("./images/NFTCollections/OneCategory.png");
+const avax_collection = require("../../images/NFTCollections/AvaxCategory.png");
+const bsc_collection = require("../../images/NFTCollections/BscCategory.png");
+const ftm_collection = require("../../images/NFTCollections/FtmCategory.png");
+const matic_collection = require("../../images/NFTCollections/MaticCategory.png");
+const one_collection = require("../../images/NFTCollections/OneCategory.png");
 
 const NFTCollectionsDate = [
   {

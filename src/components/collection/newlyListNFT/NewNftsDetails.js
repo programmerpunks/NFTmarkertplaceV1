@@ -1,4 +1,4 @@
-import nft_image from "./images/monkey.png";
+import nft_image from "../../../images/monkey.png";
 const NewNftsDetails = [
   {
     img_url: nft_image,
