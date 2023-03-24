@@ -18,10 +18,11 @@ const GoTopBtn = () => {
       setisVisible(false);
     }
   };
+
   useEffect(() => {
     window.addEventListener("scroll", listenToScroll);
   }, []);
-  
+
   return (
     <>
       {isVisible && (

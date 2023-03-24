@@ -11,6 +11,7 @@ import NFTCollections from "./NFTCollectionAPI";
 const NFTCollection = () => {
   const [noOfElements, setnoOfElements] = useState(30);
   const [SelectedBtn, setSelectedBtn] = useState("All");
+
   let filtered_NFTs = get_NFTs_Filtered({ SelectedBtn }, NFTCollections);
   const sliced_NFTs = filtered_NFTs.slice(0, noOfElements);
 

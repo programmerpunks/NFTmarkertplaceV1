@@ -1,4 +1,5 @@
 import React from "react";
+
 import NewListedNFTCartItem from "./newlyListedNFTCartItem";
 import NewNftsDetails from "./NewNftsDetails";
 

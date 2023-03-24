@@ -1,5 +1,4 @@
-
-const NewListedNFTCartItem = ({category, image, title, total_nfts_count}) => {
+const NewListedNFTCartItem = ({ category, image, title, total_nfts_count }) => {
   return (
     <>
       <div className="shadow-lg flex p-2 w-64 rounded-lg hover:-translate-y-4 duration-500 bg-white">
@@ -12,9 +11,7 @@ const NewListedNFTCartItem = ({category, image, title, total_nfts_count}) => {
             <div className="bg-black font-bold text-white w-fit p-1 rounded-md text-xs">
               {category}
             </div>
-            <p className="text-slate-400 text-sm">
-              {total_nfts_count} NFTs
-            </p>
+            <p className="text-slate-400 text-sm">{total_nfts_count} NFTs</p>
           </div>
         </div>
       </div>
