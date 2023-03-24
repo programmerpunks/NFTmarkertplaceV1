@@ -2,7 +2,7 @@
 
 ### Description
 
-- This is an NFTKEYS application designed with React JSX.
+- This is an NFTKEYS application designed with React JSX adn tailwindcss.
 
 ### Technologies used:
 
