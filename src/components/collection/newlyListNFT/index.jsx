@@ -1,7 +1,7 @@
 import React from "react";
 
 import NewListedNFTCartItem from "./newlyListedNFTCartItem";
-import NewNftsDetails from "./NewNftsDetails";
+import NewNftsDetails from "../../../content/collecion/NewNftsDetails";
 
 const NewNftCollection = () => {
   return (

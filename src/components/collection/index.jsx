@@ -6,7 +6,7 @@ import get_NFTs_Filtered from "./helping_functions/NFTsListingFunctions";
 import GoTopBtn from "./GoToTop";
 import NewNftCollection from "./newlyListNFT";
 import NFTCart from "./NFTMarketplace";
-import NFTCollections from "./NFTCollectionAPI";
+import NFTCollections from "../../content/collecion/NFTCollectionAPI";
 
 const NFTCollection = () => {
   const [noOfElements, setnoOfElements] = useState(30);
