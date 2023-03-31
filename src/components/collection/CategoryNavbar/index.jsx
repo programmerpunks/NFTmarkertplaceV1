@@ -7,8 +7,8 @@ const set_states = (setnoOfElements, count, setSelectedBtn, value) => {
 
 const CategoryNavbar = ({ setSelectedBtn, selectedBtn, setnoOfElements }) => {
   return (
-    <div className="shadow-lg rounded-full mx-auto w-[60%] h-[50px] bg-white">
-      <div className="flex justify-evenly text-xl">
+    <div className="shadow-lg rounded-full mx-auto w-[90%] md:w-[70%] h-[50px] bg-white">
+      <div className="flex justify-evenly text-lg sm:text-xl">
         <div
           className={`w-full h-[100%] py-3 flex justify-center hover:cursor-pointer ${
             selectedBtn === "All" && "bg-black text-white rounded-full"

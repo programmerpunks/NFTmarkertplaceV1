@@ -1,10 +1,10 @@
 import React from "react";
-import { TbBrandDiscord } from "react-icons/tb";
+import { SocialLinkDetails } from "../../content/footer";
 
 const Footer = () => {
   return (
     <>
-      <div className="bg-[#F3F5FB]">
+      <div className="bg-[#F3F5FB] pt-16">
         <div className="shadow-2xl mx-5 px-5 py-10 lg:mx-[15%] bg-white">
           <h1 className="text-3xl text-center font-bold">
             NFTKEY integration criteria for NFT collections
@@ -32,18 +32,15 @@ const Footer = () => {
         <div className="bg-black text-white flex justify-center py-10 mt-[150px]">
           <div className="flex-row md:flex md:justify-between md:w-[100%] md:mx-5 lg:mx-[10%]">
             <div className="flex">
-              <div className="mr-4">
-                <TbBrandDiscord size={30} />
-              </div>
               <div>NFTKEY © 2022</div>
             </div>
             <div className="hidden lg:block">
               Your Decentralized NFT Marketplace
             </div>
             <div className="flex w-[100%] mt-4 md:mt-0 justify-between md:justify-end md:space-x-3 md:w-fit">
-              <TbBrandDiscord size={30} />
-              <TbBrandDiscord size={30} />
-              <TbBrandDiscord size={30} />
+              {SocialLinkDetails.map((item)=>{
+                return <a href={item.link}>{item.icon}</a>
+              })}
             </div>
           </div>
         </div>
